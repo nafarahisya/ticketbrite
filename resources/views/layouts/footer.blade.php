@@ -54,7 +54,7 @@
             <div style="display:flex;flex-direction:row;color:white">
                 <i class="copyright icon"></i>
                 <div>
-                    2019, ticketbrite
+                    2020, ticketbrite
                 </div>
             </div>
         </div>
