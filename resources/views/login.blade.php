@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Masuk | EventOn</title>
+    <title>Masuk | ticketbrite
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <!-- Site Properties -->
     <link rel="icon" href="assets/image/favicon.ico" type="image/gif">
@@ -89,7 +90,7 @@
         style="position:absolute;top: 50%;left: 50%;transform: translateX(-50%) translateY(-50%);margin:20px">
         <div class="ui container center aligned">
             <a href="/">
-                <img class="ui centered image " src="{{asset('eo11.png')}}" style="max-height:150px">
+                <img class="ui centered image " src="{{asset('Model 1.png')}}" style="max-height:150px">
             </a>
             <div style="margin-top:20px">
                 <h2>Silahkan Masuk Ke Akun Anda</h2>
@@ -114,11 +115,11 @@
                             </div>
                             <a href="#">
                                 <button class="ui fluid large teal submit button"
-                                    style="margin-top:15px;margin-bottom:20px">
+                                    style="margin-top:15px;margin-bottom:20px; background-color:#D1A827">
                                     Masuk
                                 </button>
                             </a>
-                            <div style="font-size:15px">Belum punya akun EventOn?<a href="{{ route('tamu.lihat-registrasi') }}" style="color:teal">
+                            <div style="font-size:15px">Belum punya akun ticketbrite?<a href="{{ route('tamu.lihat-registrasi') }}" style="color:teal">
                                     Daftar</a></div>
                         </div>
 

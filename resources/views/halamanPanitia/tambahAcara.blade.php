@@ -1,5 +1,5 @@
 @extends (\Session::has('username') ? 'layouts.navLogin' : 'layouts.nav')
-@section('title', 'Tambah Acara | EventOn')
+@section('title', 'Tambah Acara | ticketbrite')
 
 @section('js')
 <script type="text/javascript">
@@ -128,7 +128,7 @@
     <div style="max-width:700px;margin: 0 auto;border:1px solid #e1e2e3;border-radius:6px;padding:40px 45px 40px 45px">
         <div style="font-size:28px"><b>Tambah Acara</b></div>
         <div style="font-size:20px;margin-top:15px;line-height:1.5">
-            Bagikan informasi acara anda kepada para pengguna EventOn agar mereka tertarik dengan acara anda.
+            Bagikan informasi acara anda kepada para pengguna ticketbrite agar mereka tertarik dengan acara anda.
         </div>
         <div class="ui divider"></div>
         <div class="ui container fluid" style="margin-top:20px">
@@ -311,7 +311,7 @@
                 </div>
             </div>
             {{csrf_field()}}
-            <button class="ui big teal button fluid" onclick="" type="submit" name="submit" style="margin-top:40px">
+            <button class="ui big teal button fluid" onclick="" type="submit" name="submit" style="margin-top:40px; background-color:#D1A827">
                 Tambah Acara
             </button>
             <div class="ui error message">

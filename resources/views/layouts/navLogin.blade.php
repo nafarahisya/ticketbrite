@@ -240,7 +240,7 @@
                 </form>
             </div>
             <div class="right item">
-                <div class="ui teal top right pointing dropdown button">
+                <div class="ui teal top right pointing dropdown button" style="background-color:#D1A827">
                     <i class="briefcase icon"></i>
                     <span>Panitia</span>
                     <div class="menu">
@@ -275,7 +275,7 @@
                         @endif
                     </div>
                 </div>
-                <div class="ui teal top right pointing dropdown button" style="margin-left:15px">
+                <div class="ui teal top right pointing dropdown button" style="margin-left:15px; background-color:#D1A827">
                     <i class="user circle icon"></i>
                     <span>Akun</span>
                     <div class="menu">
@@ -306,7 +306,7 @@
                             Riwayat Pesanan
                         </a>
                         <a href="{{route('tamu.logout')}}">
-                            <button class="ui fluid teal button" style="margin-top:10px">
+                            <button class="ui fluid teal button" style="margin-top:10px; background-color:#D1A827">
                                 <i class="sign-out icon"></i>
                                 Keluar
                             </button>
@@ -318,10 +318,10 @@
     </div>
 
     <!-- Sidebar Menu -->
-    <div class="ui vertical inverted sidebar borderless menu left" style="background-color:#273d40">
+    <div class="ui vertical inverted sidebar borderless menu left" style="background-color:#A1BBD0">
         <div class="item" style="margin-right:10px">
             <a class="ui tiny image" href="#">
-                <img src="assets/image/HELPPET-LIGHT.png">
+                <img src="{{asset('Model 1.png')}}">
             </a>
         </div>
         <a class="item" href="{{route('index')}}">Beranda</a>
@@ -407,7 +407,7 @@
 
     <!-- Main Menu -->
     <div class="pusher">
-        <div class="ui inverted vertical center aligned segment" style="background-color:#273d40">
+        <div class="ui inverted vertical center aligned segment" style="background-color:#A1BBD0">
             <div class="ui container">
                 <div class="ui large secondary inverted menu">
                     <a class="toc item">

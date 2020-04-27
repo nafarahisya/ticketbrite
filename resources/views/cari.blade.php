@@ -1,5 +1,5 @@
 @extends (\Session::has('username') ? 'layouts.navLogin' : 'layouts.nav')
-@section('title', 'Pencarian | EventOn')
+@section('title', 'Pencarian | ticketbrite')
 
 @section('content')
 
@@ -21,7 +21,7 @@
         Silahkan cari hingga mendapatkan acara terbaik pilihan anda
     </div>
     <div style="margin-top:10px;margin-bottom:25px;font-size:17px">
-        Terdapat {{count($acaras)}} event untuk <b>'{{$key}}'</b> di EventOn
+        Terdapat {{count($acaras)}} event untuk <b>'{{$key}}'</b> di ticketbrite
     </div>
 </div>
 

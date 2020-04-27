@@ -1,5 +1,5 @@
 @extends (\Session::has('username') ? 'layouts.navLogin' : 'layouts.nav')
-@section('title', 'Beranda | EventOn')
+@section('title', 'Beranda | ticketbrite')
 
 @section('js')
 <script type="text/javascript">
@@ -72,7 +72,7 @@
     <div style="max-width:700px;margin: 0 auto;border:1px solid #e1e2e3;border-radius:6px;padding:40px 45px 40px 45px">
         <div style="font-size:28px"><b>Formulir Pendaftaran Panitia</b></div>
         <div style="font-size:20px;margin-top:15px;line-height:1.5">
-            Daftarkan diri sebagai panitia agar bisa mempromosikan acara untuk pengguna EventOn
+            Daftarkan diri sebagai panitia agar bisa mempromosikan acara untuk pengguna ticketbrite
         </div>
         <div class="ui divider"></div>
         <div class="ui container fluid" style="margin-top:20px">

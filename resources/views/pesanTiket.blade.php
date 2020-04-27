@@ -1,5 +1,5 @@
 @extends (\Session::has('username') ? 'layouts.navLogin' : 'layouts.nav')
-@section('title', 'Pesan Tiket | EventOn')
+@section('title', 'Pesan Tiket | ticketbrite')
 
 @section('js')
 <script>

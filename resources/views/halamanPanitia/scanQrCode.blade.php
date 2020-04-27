@@ -1,5 +1,5 @@
 @extends (\Session::has('username') ? 'layouts.navLogin' : 'layouts.nav')
-@section('title', 'Scan Barcode Acara | EventOn')
+@section('title', 'Scan Barcode Acara | ticketbrite')
 
 @section('js')
 <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
@@ -64,7 +64,7 @@
                 <input type="text" name="kode_pesanan" placeholder="Masukkan Kode Acara">
             </div>
             {{csrf_field()}}
-            <button class="ui big teal button fluid"  type="submit" name="submit" style="margin-top:40px">
+            <button class="ui big teal button fluid"  type="submit" name="submit" style="margin-top:40px;background-color:#D1A827">
                 Kirim
             </button>
         </form>

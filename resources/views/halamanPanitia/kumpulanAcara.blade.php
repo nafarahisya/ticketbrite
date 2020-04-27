@@ -1,5 +1,5 @@
 @extends (\Session::has('username') ? 'layouts.navLogin' : 'layouts.nav')
-@section('title', 'Kumpulan Acara | EventOn')
+@section('title', 'Kumpulan Acara | ticketbrite')
 
 @section('content')
 @if(\Session::has('alert'))
@@ -19,9 +19,9 @@
     <div class="ui stackable grid">
         <div class="four wide column">
             <div
-                style="border:4px solid #4b8991;border-radius:5px;background-color:#f8f8f8;padding:40px 30px 40px 30px">
+                style="border:4px solid #687672;border-radius:5px;background-color:#f8f8f8;padding:40px 30px 40px 30px">
                 <img class="ui circular centered image" src="{{asset(Session::get('foto_panitia'))}}"
-                    style="width:150px;height:150px;object-fit:cover;border:5px solid #4b8991;padding:3px">
+                    style="width:150px;height:150px;object-fit:cover;border:5px solid #687672;padding:3px">
                 <div
                     style="text-align:center;line-height:1.5;font-size:22px;margin-top:20px;margin-bottom:20px;color:#4d4d4d">
                     <b>{{Session::get('nama_profesi')}}</b>

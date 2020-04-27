@@ -1,5 +1,5 @@
 @extends (\Session::has('username') ? 'layouts.navLogin' : 'layouts.nav')
-@section('title', 'Instruksi Pembayaran | EventOn')
+@section('title', 'Instruksi Pembayaran | ticketbrite')
 
 @section('js')
 <script src="/js/dropzone.js"></script>
@@ -93,7 +93,7 @@
     <div style="max-width:600px;margin: 0 auto;border:1px solid #e1e2e3;border-radius:6px;background-color:white">
         <div class="ui container center aligned" style="padding:40px 60px 40px 60px">
             <div>
-                <p style="font-size:16px">Transfer ke rekening a/n <b>PT. EventOn</b> berikut ini :</p>
+                <p style="font-size:16px">Transfer ke rekening a/n <b>PT. ticketbrite</b> berikut ini :</p>
             </div>
             <div class="ui stackable grid"
                 style="border:1px solid #e1e2e3;border-radius:6px;margin:20px 5px 20px 5px;padding:10px">

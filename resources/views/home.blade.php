@@ -1,8 +1,8 @@
 @extends (\Session::has('username') ? 'layouts.navLogin' : 'layouts.nav')
-@section('title', 'Beranda | EventOn')
+@section('title', 'Beranda | ticketbrite')
 
 @section('content')
-<div class="ui container fluid" style="background-color:#273d40">
+<div class="ui container fluid" style="background-color:#A1BBD0">
     @if(\Session::has('alert'))
     <div style="position:absolute;right:15px;top:15px;max-width:400px">
         <div class="ui negative message alert" style="display:none">
@@ -25,21 +25,21 @@
                 <div class="ui two column stackable grid" style="margin-top:20px">
                     <div class="row">
                         <div class="column">
-                            <img src="{{asset('eventOn1.png')}}" class="ui big centered image">
+                            <img src="{{asset('Model 1.png')}}" class="ui big centered image">
                         </div>
                         <div class="column middle aligned">
                             <div class="ui two row grid">
                                 <div class="column">
                                     <div class="row">
-                                        <h2 class="ui header" style="color:white">Apa Itu eventOn?</h2>
-                                        <p style="color:white;font-size:16px">EventOn merupakan solusi yang tepat bagi
+                                        <h2 class="ui header" style="color:white">Apa Itu ticketbrite?</h2>
+                                        <p style="color:white;font-size:16px">ticketbrite merupakan solusi yang tepat bagi
                                             anda yang ingin membuat suatu event
                                             impian anda.
                                         </p>
                                     </div>
                                     <div class="row" style="margin-top:30px">
                                         <h2 class="ui header" style="color:white">Mengikuti Event Tertentu</h2>
-                                        <p style="color:white;font-size:16px">Selain itu, di eventOn kamu juga bisa
+                                        <p style="color:white;font-size:16px">Selain itu, di ticketbrite kamu juga bisa
                                             memesan tiket event tertentu lho!
                                         </p>
                                     </div>
@@ -52,7 +52,7 @@
                     @if(!Session::has('username'))
                     <a href="{{ route('tamu.lihat-registrasi') }}">
                         <div class="ui huge animated fade button teal" tabindex="0"
-                            style="border-radius:5px;margin-bottom:20px;color:white">
+                            style="border-radius:5px;margin-bottom:20px;background-color:#D1A827">
                             <div class="visible content">Ingin Jadi Event Organizer?</div>
                             <div class="hidden content">
                                 Daftar Sekarang
@@ -62,7 +62,7 @@
                     @else
                     <a href="#cari">
                         <div class="ui huge animated fade button teal" tabindex="0"
-                            style="border-radius:5px;margin-bottom:20px;color:white">
+                            style="border-radius:5px;margin-bottom:20px;background-color:#D1A827">
                             <div class="visible content">Ingin Beli Tiket Event Tertentu ?</div>
                             <div class="hidden content">
                                 Pesan Sekarang
@@ -78,7 +78,7 @@
 
 <div class="ui container" style="margin-top:60px;margin-bottom:40px">
     <div style="font-size:36px;text-align:center">
-        <p>Apa Keuntungan Menggunakan eventOn?</p>
+        <p>Apa Keuntungan Menggunakan ticketbrite?</p>
     </div>
     <div class="ui divider" style="margin:40px 0px 20px 0px"></div>
     <div style="font-size:32px;margin-bottom:10px">
@@ -86,7 +86,7 @@
     </div>
     <div class="ui middle aligned stackable grid">
         <div class="seven wide left floated column">
-            <img src="{{asset('arsitek2.jpg')}}" class="ui large rounded image">
+            <img src="{{asset('event-organizer.jpg')}}" class="ui large rounded image">
         </div>
         <div class="nine wide column">
             <div class="ui middle aligned stackable grid">
@@ -96,7 +96,7 @@
                 <div class="fourteen wide left floated column" style="padding-left:20px">
                     <h2>Event</h2>
                     <p style="font-size:18px">Memasarkan event yang dibuat untuk dapat ditemukan oleh semua pengguna
-                        EventOn</p>
+                        ticketbrite</p>
                 </div>
             </div>
             <div class="ui middle aligned stackable grid">
@@ -154,7 +154,7 @@
             </div>
         </div>
         <div class="seven wide right floated column">
-            <img src="{{asset('customer.jpg')}}" class="ui large rounded right floated image">
+            <img src="{{asset('pembeli.jpg')}}" class="ui large rounded right floated image">
         </div>
     </div>
 </div>
@@ -171,7 +171,7 @@
         <form class="ui fluid action input" style="margin-top:20px;font-size:18px;padding-left:60px;padding-right:60px"
             method="get" action="{{route('lihat-acara-cari')}}">
             <input type="text" name="keyword" placeholder="Cari desain rumah impian yang ingin anda buat...">
-            <button type="submit" class="ui button teal">Cari</button>
+            <button type="submit" class="ui button teal" style = "background-color:#D1A827">Cari</button>
         </form>
     </div>
 
@@ -361,7 +361,7 @@
     </div>
     <div class="ui center aligned container" style="margin-top:40px">
         <a href="{{route('lihat-semua-acara')}}">
-            <div class="ui vertical animated large teal button" style="width:150px">
+            <div class="ui vertical animated large teal button" style="width:150px;background-color:#D1A827">
                 <div class="hidden content">Lihat Semua</div>
                 <div class="visible content">
                     <i class="angle double down icon"></i>

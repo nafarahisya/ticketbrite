@@ -105,17 +105,17 @@
         @endif
         <div class="ui container center aligned">
             <a href="/">
-                <img class="ui centered image" src="{{asset('eo11.png')}}"
-                    style="margin-bottom:20px;max-height:90px">
+                <img class="ui centered image" src="{{asset('Model 1.png')}}"
+                    style="margin-bottom:20px;max-height:150px">
             </a>
             <form class="ui form" action="{{ route('tamu.register') }}" method="post" enctype="multipart/form-data">
                 <div class="ui centered stackable grid">
                     <div class="six wide middle aligned column" style="padding-right:50px">
                         <div>
-                            <img src="{{asset('eventOn1.png')}}" class="ui rounded centered large image">
+                            <img src="{{asset('event.png')}}" class="ui rounded centered large image">
                         </div>
                         <div style="font-size:25px;margin-top:5px">
-                            Mari Bergabung Bersama Event On
+                            Mari Bergabung Bersama ticketbrite
                         </div>
                         <div style="font-size:19px;margin-top:5px">
                             Dan wujudkan event impian anda
@@ -155,10 +155,10 @@
                                 </div>
                             </div>
                             {{csrf_field()}}
-                            <button class="ui fluid large button teal" style="margin-top:15px;margin-bottom:20px">
+                            <button class="ui fluid large button teal" style="margin-top:15px;margin-bottom:20px; background-color:#D1A827">
                                 Daftar
                             </button>
-                            <div style="font-size:15px">Sudah punya akun EventOn?<a
+                            <div style="font-size:15px">Sudah punya akun ticketbrite?<a
                                     href="{{ route('tamu.lihat-login') }}" style="color:teal">
                                     Masuk</a>
                             </div>

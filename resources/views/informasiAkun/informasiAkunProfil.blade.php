@@ -1,5 +1,5 @@
 @extends (\Session::has('username') ? 'layouts.navLogin' : 'layouts.nav')
-@section('title', 'Informasi Akun | EventOn')
+@section('title', 'Informasi Akun | ticketbrite')
 
 @section('content')
 @if(\Session::has('alert'))
@@ -13,7 +13,7 @@
     <div class="ui stackable grid">
         <div class="four wide column">
             <div
-                style="border:4px solid #4b8991;border-radius:5px;background-color:#f8f8f8;padding:40px 30px 40px 30px">
+                style="border:4px solid #687672;border-radius:5px;background-color:#f8f8f8;padding:40px 30px 40px 30px">
                 <div
                     style="text-align:center;line-height:1.5;font-size:22px;margin-top:20px;margin-bottom:20px;color:#4d4d4d">
                     <b>{{Session::get('username')}}</b>

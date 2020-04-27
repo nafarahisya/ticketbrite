@@ -1,5 +1,5 @@
 @extends (\Session::has('username') ? 'layouts.navLogin' : 'layouts.nav')
-@section('title', 'Ubah Detail Acara | EventOn')
+@section('title', 'Ubah Detail Acara | ticketbrite')
 
 @section('js')
 <script type="text/javascript">
@@ -107,7 +107,7 @@
     <div style="max-width:700px;margin: 0 auto;border:1px solid #e1e2e3;border-radius:6px;padding:40px 45px 40px 45px">
         <div style="font-size:28px;line-height:1"><b>Ubah Detail Acara</b></div>
         <div style="font-size:20px;margin-top:15px;line-height:1.5">
-            Ubah informasi acara anda menjadi lebih menarik agar para pengguna EventOn tertarik dengan acara anda.
+            Ubah informasi acara anda menjadi lebih menarik agar para pengguna ticketbrite tertarik dengan acara anda.
         </div>
         <div class="ui divider"></div>
         <div style="font-size:20px;margin-top:15px;line-height:1.5">

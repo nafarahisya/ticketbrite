@@ -182,7 +182,7 @@
     <!-- Following Menu -->
     <div class="ui large top borderless menu fixed transition hidden">
         <div class="ui container">
-            <div class="item" style="margin-right:10px">
+            <div class="item" style="margin-right:10px; width:100;height:100">
                 <img src="{{asset('Model 1.png')}}" style="color:white">
 
             </div>
@@ -191,10 +191,10 @@
             <a class="item" href="{{route('lihat-acara-kategori',['kategori'=>'kesehatan'])}}">Kesehatan</a>
             <a class="item" href="{{route('lihat-acara-kategori',['kategori'=>'liburan'])}}">Liburan</a>
             <div class="right item">
-                <a class="ui teal button" style="margin-right:15px" href="{{ route('tamu.lihat-login') }}">
+                <a class="ui teal button" style="margin-right:15px; background-color:#D1A827" href="{{ route('tamu.lihat-login') }}">
                     Masuk
                 </a>
-                <a class="ui teal button" href="{{ route('tamu.lihat-registrasi') }}">
+                <a class="ui teal button" style="background-color:#D1A827" href="{{ route('tamu.lihat-registrasi') }}">
                     Daftar
                 </a>
             </div>
@@ -202,10 +202,10 @@
     </div>
 
     <!-- Sidebar Menu -->
-    <div class="ui vertical inverted sidebar borderless menu left" style="background-color:#273d40">
+    <div class="ui vertical inverted sidebar borderless menu left" style="background-color:#D1A827">
         <div class="item" style="margin-right:10px">
             <a class="ui tiny image" href="#">
-                <img src="assets/image/HELPPET-LIGHT.png">
+                <img src="{{asset('Model 1.png')}}">
             </a>
         </div>
         <a class="item" href="{{route('index')}}">Beranda</a>
@@ -224,13 +224,13 @@
 
     <!-- Main Menu -->
     <div class="pusher">
-        <div class="ui inverted vertical center aligned segment" style="background-color:#273d40">
+        <div class="ui inverted vertical center aligned segment" style="background-color:#A1BBD0">
             <div class="ui container">
                 <div class="ui large secondary inverted menu">
                     <a class="toc item">
                         <i class="sidebar icon"></i>
                     </a>
-                    <div class="item" style="margin-right:10px">
+                    <div class="item" style="margin-right:10px; width:100;height:100">
                         <img src="{{asset('Model 1.png')}}" style="color:white">
                     </div>
                     <a class="item" href="{{route('index')}}">Beranda</a>
