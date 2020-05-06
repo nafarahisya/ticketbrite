@@ -6,10 +6,10 @@
     style="margin-top:20px;background-color:#f8f8f8;border:5px solid #687672;border-radius:5px;padding:30px 20px 30px 20px;color:#4d4d4d">
     @if(count($acaras)<=0)
         <div class="ui container center aligned">
-            <i class="huge search teal icon"></i>
+            <i class="huge search grey icon"></i>
             <div style="font-size:24px;line-height:1.5;margin-top:15px"><b>Oops, anda belum memiliki acara :(</b></div>
             <div style="font-size:20px;line-height:1.5;margin-top:15px">Yuk tambahkan acara anda ke ticketbrite agar calon pemesan tertarik dengan acara yang anda tawarkan.</div>
-            <button class="ui large teal button"  style="margin-top:15px; background-color:#D1A827" onclick="window.location.href='{{route('tamu.user.panitia.verif.lihat-halaman-tambah-acara')}}'">Tambah acara</button>
+            <button class="ui large grey button"  style="margin-top:15px; background-color:#D1A827" onclick="window.location.href='{{route('tamu.user.panitia.verif.lihat-halaman-tambah-acara')}}'">Tambah acara</button>
         </div>
     @else
     <div style="font-size:20px">
@@ -47,11 +47,11 @@
             </div>
             <div class="extra content">
                 <div>
-                    <i class="user circle teal icon"></i>
+                    <i class="user circle grey icon"></i>
                     {{ucfirst($panitia->nama_panitia)}}
                 </div>
                 <div style="margin-top:5px;display:flex;flex-direction:row;align-acaras: center">
-                    <div><i class="map marker alternate teal icon"></i></div>
+                    <div><i class="map marker alternate grey icon"></i></div>
                     <div>{{ucfirst($acaras[$i]->lokasi)}}</div>
                 </div>
             </div>
@@ -88,10 +88,10 @@
                             <div class="ui divider"></div>
                             <div class="ui grid">
                                 <div class="one wide middle aligned column">
-                                    <i class="info circle large teal icon"></i>
+                                    <i class="info circle large grey icon"></i>
                                 </div>
                                 <div class="fifteen wide column">
-                                    <div style="font-size:22px;color:teal"><b>Detail acara</b></div>
+                                    <div style="font-size:22px;color:grey"><b>Detail acara</b></div>
                                 </div>
                             </div>
                             <div class="ui divider"></div>
@@ -111,7 +111,7 @@
                                         <b>{{ucfirst($acaras[$i]->nama_acara)}}</b>
                                     </div>
                                     <div style="margin-top:5px;display:flex;flex-direction:row;align-acaras: center">
-                                        <div><i class="map marker alternate teal icon"></i></div>
+                                        <div><i class="map marker alternate grey icon"></i></div>
                                         <div style="font-size:17px">{{ucfirst($acaras[$i]->lokasi)}}</div>
                                     </div>
                                 </div>
@@ -156,7 +156,7 @@
                             <div class="ui divider"></div>
                             <div class="ui container fluid" style="text-align:right">
                                 <div style="font-size:22px"><b>Biaya Acara</b></div>
-                                <div style="color:teal;font-size:20px">
+                                <div style="color:grey;font-size:20px">
                                     <b>
                                         <span>Rp </span>
                                     <span>{{number_format(($acaras[$i]->harga),0,",",".")}}</span>
@@ -171,7 +171,7 @@
                         <button class="ui negative button" onclick="$('.ui.tiny.modal.hapus.<?php echo $i ?>').modal('show')">
                             Hapus acara
                         </button>
-                        <button class="ui teal button" onclick="window.location.href='{{route('tamu.user.panitia.verif.lihat-halaman-ubah-acara',['id_acara' => $acaras[$i]->id])}}'">
+                        <button class="ui grey button" onclick="window.location.href='{{route('tamu.user.panitia.verif.lihat-halaman-ubah-acara',['id_acara' => $acaras[$i]->id])}}'">
                             Ubah Detail Acara
                         </button>
                         <button class="ui orange button" onclick="window.location.href='{{route('tamu.user.panitia.verif.lihat-halaman-pembeli',['id_acara' => $acaras[$i]->id])}}'">

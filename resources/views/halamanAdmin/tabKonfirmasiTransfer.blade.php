@@ -4,7 +4,7 @@
 </div>
 <div style="margin-top:20px;background-color:#f8f8f8;border:5px solid #687672;border-radius:5px;color:#4d4d4d">
     <div class="ui container fluid" style="padding:30px 20px 30px 20px">
-        <table class="ui striped stackable sortable celled teal table center aligned">
+        <table class="ui striped stackable sortable celled grey table center aligned">
             <thead>
                 <tr>
                     <th>No Transaksi</th>
@@ -29,7 +29,7 @@
                         <span>Rp </span>
                         <span>{{number_format(($pesans[$i]->jumlah),0,",",".")}}</span>
                         <div style="margin-top:5px">
-                            <button class="ui button basic teal"
+                            <button class="ui button basic grey"
                                 onclick="$('.ui.large.modal.bukti.<?php echo $i ?>').modal('show')">Lihat</button>
                         </div>
                     </td>
@@ -65,7 +65,7 @@
                         <button class="ui negative button">
                             Tutup
                         </button>
-                        <a class="ui teal right button" href="{{asset($pesans[$i]->gambar_konfirmasi)}}"
+                        <a class="ui grey right button" href="{{asset($pesans[$i]->gambar_konfirmasi)}}"
                             download="buktipembayaran<?php echo $pesans[$i]->nama ?>">
                             Download
                         </a>

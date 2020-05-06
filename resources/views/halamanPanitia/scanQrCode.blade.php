@@ -64,7 +64,7 @@
                 <input type="text" name="kode_pesanan" placeholder="Masukkan Kode Acara">
             </div>
             {{csrf_field()}}
-            <button class="ui big teal button fluid"  type="submit" name="submit" style="margin-top:40px;background-color:#D1A827">
+            <button class="ui big grey button fluid"  type="submit" name="submit" style="margin-top:40px;background-color:#D1A827">
                 Kirim
             </button>
         </form>

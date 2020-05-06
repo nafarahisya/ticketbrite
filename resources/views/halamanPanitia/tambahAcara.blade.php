@@ -311,7 +311,7 @@
                 </div>
             </div>
             {{csrf_field()}}
-            <button class="ui big teal button fluid" onclick="" type="submit" name="submit" style="margin-top:40px; background-color:#D1A827">
+            <button class="ui big grey button fluid" onclick="" type="submit" name="submit" style="margin-top:40px; background-color:#D1A827">
                 Tambah Acara
             </button>
             <div class="ui error message">

@@ -240,7 +240,7 @@
                 </form>
             </div>
             <div class="right item">
-                <div class="ui teal top right pointing dropdown button" style="background-color:#D1A827">
+                <div class="ui grey top right pointing dropdown button" style="background-color:#D1A827">
                     <i class="briefcase icon"></i>
                     <span>Panitia</span>
                     <div class="menu">
@@ -275,7 +275,7 @@
                         @endif
                     </div>
                 </div>
-                <div class="ui teal top right pointing dropdown button" style="margin-left:15px; background-color:#D1A827">
+                <div class="ui grey top right pointing dropdown button" style="margin-left:15px; background-color:#D1A827">
                     <i class="user circle icon"></i>
                     <span>Akun</span>
                     <div class="menu">
@@ -306,7 +306,7 @@
                             Riwayat Pesanan
                         </a>
                         <a href="{{route('tamu.logout')}}">
-                            <button class="ui fluid teal button" style="margin-top:10px; background-color:#D1A827">
+                            <button class="ui fluid grey button" style="margin-top:10px; background-color:#D1A827">
                                 <i class="sign-out icon"></i>
                                 Keluar
                             </button>
@@ -395,7 +395,7 @@
                         Riwayat Pesanan
                     </a>
                     <a href="{{route('tamu.logout')}}">
-                        <button class="ui fluid teal button" style="margin-top:10px">
+                        <button class="ui fluid grey button" style="margin-top:10px">
                             <i class="sign-out icon"></i>
                             Keluar
                         </button>
@@ -494,7 +494,7 @@
                                     Riwayat Pesanan
                                 </a>
                                 <a href="{{route('tamu.logout')}}">
-                                    <button class="ui fluid teal button" style="margin-top:10px">
+                                    <button class="ui fluid grey button" style="margin-top:10px">
                                         <i class="sign-out icon"></i>
                                         Keluar
                                     </button>

@@ -114,12 +114,12 @@
                                 </div>
                             </div>
                             <a href="#">
-                                <button class="ui fluid large teal submit button"
+                                <button class="ui fluid large grey submit button"
                                     style="margin-top:15px;margin-bottom:20px; background-color:#D1A827">
                                     Masuk
                                 </button>
                             </a>
-                            <div style="font-size:15px">Belum punya akun ticketbrite?<a href="{{ route('tamu.lihat-registrasi') }}" style="color:teal">
+                            <div style="font-size:15px">Belum punya akun ticketbrite?<a href="{{ route('tamu.lihat-registrasi') }}" style="color:grey">
                                     Daftar</a></div>
                         </div>
 

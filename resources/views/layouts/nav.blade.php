@@ -191,10 +191,10 @@
             <a class="item" href="{{route('lihat-acara-kategori',['kategori'=>'kesehatan'])}}">Kesehatan</a>
             <a class="item" href="{{route('lihat-acara-kategori',['kategori'=>'liburan'])}}">Liburan</a>
             <div class="right item">
-                <a class="ui teal button" style="margin-right:15px; background-color:#D1A827" href="{{ route('tamu.lihat-login') }}">
+                <a class="ui grey button" style="margin-right:15px; background-color:#D1A827" href="{{ route('tamu.lihat-login') }}">
                     Masuk
                 </a>
-                <a class="ui teal button" style="background-color:#D1A827" href="{{ route('tamu.lihat-registrasi') }}">
+                <a class="ui grey button" style="background-color:#D1A827" href="{{ route('tamu.lihat-registrasi') }}">
                     Daftar
                 </a>
             </div>

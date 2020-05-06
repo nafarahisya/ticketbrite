@@ -17,7 +17,7 @@
     <div class="ui active tab" data-tab="dalam-pengerjaan" style="padding:20px 20px 30px 20px">
             @if(count($pesans)<=0)
             <div class="ui container center aligned">
-                <i class="shopping cart icon teal huge"></i>
+                <i class="shopping cart icon grey huge"></i>
                 <div style="font-size:24px;margin-top:15px"><b>Oops, anda belum melakukan pemesanan :(</b></div>
                 <div style="font-size:20px;margin-top:15px">Yuk lakukan pemesanan sekarang...</div>
             </div>
@@ -43,7 +43,7 @@
                 <div class="blurring dimmable image">
                     <div class="ui dimmer">
                         <div class="content">
-                            <i class="teal clock outline huge icon"></i>
+                            <i class="grey clock outline huge icon"></i>
                             <div style="font-size:22px;margin-top:10px;margin-bottom:20px">
                                 Akan Datang
                             </div>
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                     <img class="ui fluid image" src="{{asset($fotos[0])}}" style="object-fit:cover;height:250px">
-                    <div class="ui top right attached teal large label" style="max-width:55%">
+                    <div class="ui top right attached grey large label" style="max-width:55%">
                         {{$statusTampil}}
                     </div>
                 </div>
@@ -68,11 +68,11 @@
                 </div>
                 <div class="extra content">
                     <div>
-                        <i class="user circle teal icon"></i>
+                        <i class="user circle grey icon"></i>
                         {{ucfirst($panitias[$i]->nama_panitia)}}
                     </div>
                     <div style="margin-top:5px;display:flex;flex-direction:row;align-items: center">
-                        <div><i class="map marker alternate teal icon"></i></div>
+                        <div><i class="map marker alternate grey icon"></i></div>
                         <div>{{ucfirst($acaras[$i]->lokasi)}}</div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
     <div class="ui tab" data-tab="selesai" style="padding:20px 20px 30px 20px">
             @if(count($pesans)<=0)
             <div class="ui container center aligned">
-                    <i class="shopping cart icon teal huge"></i>
+                    <i class="shopping cart icon grey huge"></i>
                     <div style="font-size:24px;margin-top:15px"><b>Oops, anda belum melakukan pemesanan :(</b></div>
                     <div style="font-size:20px;margin-top:15px">Yuk lakukan pemesanan sekarang...</div>
                 </div>
@@ -126,11 +126,11 @@
                 </div>
                 <div class="extra content">
                     <div>
-                        <i class="user circle teal icon"></i>
+                        <i class="user circle grey icon"></i>
                         {{ucfirst($panitias[$i]->nama_panitia)}}
                     </div>
                     <div style="margin-top:5px;display:flex;flex-direction:row;align-items: center">
-                        <div><i class="map marker alternate teal icon"></i></div>
+                        <div><i class="map marker alternate grey icon"></i></div>
                         <div>{{ucfirst($acaras[$i]->lokasi)}}</div>
                     </div>
                 </div>
@@ -143,7 +143,7 @@
     <div class="ui tab" data-tab="dibatalkan" style="padding:20px 20px 30px 20px">
             @if(count($pesans)<=0)
             <div class="ui container center aligned">
-                <i class="shopping cart icon teal huge"></i>
+                <i class="shopping cart icon grey huge"></i>
                 <div style="font-size:24px;margin-top:15px"><b>Oops, anda belum melakukan pemesanan :(</b></div>
                 <div style="font-size:20px;margin-top:15px">Yuk lakukan pemesanan sekarang...</div>
             </div>
@@ -179,11 +179,11 @@
                 </div>
                 <div class="extra content">
                     <div>
-                        <i class="user circle teal icon"></i>
+                        <i class="user circle grey icon"></i>
                         {{ucfirst($panitias[$i]->nama_panitia)}}
                     </div>
                     <div style="margin-top:5px;display:flex;flex-direction:row;align-items: center">
-                        <div><i class="map marker alternate teal icon"></i></div>
+                        <div><i class="map marker alternate grey icon"></i></div>
                         <div>{{ucfirst($acaras[$i]->lokasi)}}</div>
                     </div>
                 </div>
@@ -202,7 +202,7 @@
     </div>
     <div class="content">
     <div class="ui container center aligned">
-            <i class="sync alternate icon teal massive"></i>
+            <i class="sync alternate icon grey massive"></i>
             <div style="font-size:24px;margin-top:15px"><b>Oops, progres pengerjaan proyek anda belum tersedia...</b></div>
             <div style="font-size:19px">Harap tunggu beberapa saat sampai profesi mengirimkan progres pengerjaan proyek anda</div>
         </div>

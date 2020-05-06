@@ -65,7 +65,7 @@
             <div class="thirteen wide column">
             <div style="font-size:22px"><b>{{$acara->nama_acara}}</b></div>
                 <div style="margin-top:5px;display:flex;flex-direction:row;align-items: center">
-                    <div><i class="map marker alternate teal icon"></i></div>
+                    <div><i class="map marker alternate grey icon"></i></div>
                     <div style="font-size:18px">{{$acara->kategori}}</div>
                 </div>
             </div>
@@ -101,7 +101,7 @@
             <div style="margin-top:20px;padding:20px 20px 20px 20px;border-radius:5px;background-color:#F7EFD2">
                 <div class="ui grid">
                     <div class="one wide column middle aligned">
-                        <i class="info circle large teal icon"></i>
+                        <i class="info circle large grey icon"></i>
                     </div>
                     <div class="fifteen wide column" style="font-size:14px;line-height:1.5">
                         Pembayaran total biaya tiket dilakukan secara lunas.
@@ -109,7 +109,7 @@
                 </div>
             </div>
             {{csrf_field()}}
-            <button class="ui big teal button fluid" onclick="" type="submit" name="submit" style="margin-top:30px">
+            <button class="ui big grey button fluid" onclick="" type="submit" name="submit" style="margin-top:30px;backgroud-color:#D1A827">
                 Periksa Pesanan Tiket
             </button>
             <div class="ui error message">

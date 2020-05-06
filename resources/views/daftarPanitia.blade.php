@@ -113,7 +113,7 @@
                 <input type="text" name="nohp" placeholder="Masukkan Nomor Telepon">
             </div>
             {{csrf_field()}}
-            <button class="ui big teal button fluid" onclick="" type="submit" name="submit"
+            <button class="ui big grey button fluid" onclick="" type="submit" name="submit"
                 style="margin-top:40px">Kirim Pendaftaran
             </button>
             <div class="ui error message">

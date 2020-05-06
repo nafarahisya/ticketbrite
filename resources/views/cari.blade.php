@@ -30,7 +30,7 @@
 <div class="ui container" style="margin-top:30px">
     @if(count($acaras) <= 0) <!-- Kalo gak ketemu -->
         <div class="ui container center aligned">
-            <i class="search icon teal huge"></i>
+            <i class="search icon grey huge"></i>
             <div style="font-size:24px;margin-top:15px"><b>Oops, desain tidak ditemukan :(</b></div>
             <div style="font-size:18px;margin:15px 0px 15px 0px">
                 Hasil pencarian untuk <b>'{{$key}}'</b> tidak ditemukan.
@@ -60,7 +60,7 @@
                             </div>
                         </div>
                         <div class="ui divider"></div>
-                        <button class="ui teal button fluid">Filter</button>
+                        <button class="ui grey button fluid">Filter</button>
                         <div class="ui divider"></div>
                     </form>
                 </div>
@@ -70,7 +70,7 @@
                     @for($i=0;$i < count($acaras);$i++) <?php $fotos = explode(" ", $acaras[$i]->foto_acara);?> <div
                         class="card" onclick="$('.ui.fullscreen.modal.detail.<?php echo $i ?>').modal('show');">
                         <img class="ui fluid image" src="{{$fotos[0]}}" style="object-fit:cover;height:250px">
-                        <div class="ui top right attached teal large label">
+                        <div class="ui top right attached grey large label">
                             <b>
                                 <span>{{strftime("%d %b %Y",strtotime($acaras[$i]->tahun.'-'.$acaras[$i]->bulan.'-'.$acaras[$i]->tanggal))}}</span>
                             </b>
@@ -88,11 +88,11 @@
                         </div>
                         <div class="extra content">
                             <div>
-                                <i class="user circle teal icon"></i>
+                                <i class="user circle grey icon"></i>
                                 {{ucfirst($panitia[$i]->nama_panitia)}}
                             </div>
                             <div style="margin-top:5px;display:flex;flex-direction:row;align-acaras: center">
-                                <div><i class="map marker alternate teal icon"></i></div>
+                                <div><i class="map marker alternate grey icon"></i></div>
                                 <div>{{ ucfirst($acaras[$i]->lokasi)}}</div>
                             </div>
                         </div>
@@ -128,10 +128,10 @@
                             <div class="ui divider"></div>
                             <div class="ui grid">
                                 <div class="one wide middle aligned column">
-                                    <i class="info circle large teal icon"></i>
+                                    <i class="info circle large grey icon"></i>
                                 </div>
                                 <div class="fifteen wide column">
-                                    <div style="font-size:22px;color:teal"><b>Detail Acara</b></div>
+                                    <div style="font-size:22px;color:grey"><b>Detail Acara</b></div>
                                 </div>
                             </div>
                             <div class="ui divider"></div>
@@ -151,7 +151,7 @@
                                         <b>{{ucfirst($acaras[$i]->nama_acara)}}</b>
                                     </div>
                                     <div style="margin-top:5px;display:flex;flex-direction:row;align-acaras: center">
-                                        <div><i class="map marker alternate teal icon"></i></div>
+                                        <div><i class="map marker alternate grey icon"></i></div>
                                         <div style="font-size:17px">{{ ucfirst($acaras[$i]->kota)}}</div>
                                     </div>
                                 </div>
@@ -190,7 +190,7 @@
                             <div class="ui divider"></div>
                             <div class="ui container fluid" style="text-align:right">
                                 <div style="font-size:22px"><b>Harga Tiket</b></div>
-                                <div style="color:teal;font-size:20px">
+                                <div style="color:grey;font-size:20px">
                                     <b>
                                         <span>Rp </span>
                                         <span>{{number_format(($acaras[$i]->harga),0,",",".")}}</span>
@@ -225,7 +225,7 @@
                                     <input type="text" name="alamat" placeholder="Isi Komentar Anda">
                                 </div>
                                 {{csrf_field()}}
-                                <button class="ui big teal button fluid" onclick="" type="submit" name="submit"
+                                <button class="ui big grey button fluid" onclick="" type="submit" name="submit"
                                     style="margin-top:40px">Kirim Komentar
                                 </button>
                             </form>

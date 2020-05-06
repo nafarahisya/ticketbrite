@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Daftar | Aderim</title>
+    <title>Daftar | ticketbrite</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <!-- Site Properties -->
     <link rel="icon" href="assets/image/favicon.ico" type="image/gif">
@@ -155,11 +155,11 @@
                                 </div>
                             </div>
                             {{csrf_field()}}
-                            <button class="ui fluid large button teal" style="margin-top:15px;margin-bottom:20px; background-color:#D1A827">
+                            <button class="ui fluid large button grey" style="margin-top:15px;margin-bottom:20px; background-color:#D1A827">
                                 Daftar
                             </button>
                             <div style="font-size:15px">Sudah punya akun ticketbrite?<a
-                                    href="{{ route('tamu.lihat-login') }}" style="color:teal">
+                                    href="{{ route('tamu.lihat-login') }}" style="color:grey">
                                     Masuk</a>
                             </div>
                         </div>

@@ -18,7 +18,7 @@
     </div>
     <div style="margin-top:30px">
         <div style="font-size:16px;margin-top:10px">
-            Bergabung dengan Aderim sejak <b>{{strftime("%d %b %Y",strtotime($akun->created_at))}}</b>
+            Bergabung dengan ticketbrite sejak <b>{{strftime("%d %b %Y",strtotime($akun->created_at))}}</b>
         </div>
     </div>
 </div>

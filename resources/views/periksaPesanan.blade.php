@@ -54,7 +54,7 @@
             <div class="thirteen wide column">
                 <div style="font-size:22px"><b>{{ ucfirst($panitia->nama_panitia)}}</b></div>
                 <div style="margin-top:5px;display:flex;flex-direction:row;align-items: center">
-                    <div><i class="map marker alternate teal icon"></i></div>
+                    <div><i class="map marker alternate grey icon"></i></div>
                     <div style="font-size:18px">{{ ucfirst($acara->kota)}}</div>
                 </div>
             </div>
@@ -243,7 +243,7 @@
             <div class="ui divider"></div>
         </div>
         {{csrf_field()}}
-        <button class="ui big teal button fluid" onclick="" type="submit" name="submit" style="margin-top:40px">
+        <button class="ui big grey button fluid" onclick="" type="submit" name="submit" style="margin-top:40px;backgroud-color:#D1A827">
             Lanjutkan
         </button>
     </form>

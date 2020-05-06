@@ -51,7 +51,7 @@
                 <div class="row" style="margin-top:10px">
                     @if(!Session::has('username'))
                     <a href="{{ route('tamu.lihat-registrasi') }}">
-                        <div class="ui huge animated fade button teal" tabindex="0"
+                        <div class="ui huge animated fade button grey" tabindex="0"
                             style="border-radius:5px;margin-bottom:20px;background-color:#D1A827">
                             <div class="visible content">Ingin Jadi Event Organizer?</div>
                             <div class="hidden content">
@@ -61,7 +61,7 @@
                     </a>
                     @else
                     <a href="#cari">
-                        <div class="ui huge animated fade button teal" tabindex="0"
+                        <div class="ui huge animated fade button grey" tabindex="0"
                             style="border-radius:5px;margin-bottom:20px;background-color:#D1A827">
                             <div class="visible content">Ingin Beli Tiket Event Tertentu ?</div>
                             <div class="hidden content">
@@ -91,7 +91,7 @@
         <div class="nine wide column">
             <div class="ui middle aligned stackable grid">
                 <div class="two wide left floated column">
-                    <i class="file image huge icon"></i>
+                    <i class="ticket alternate huge icon"></i>
                 </div>
                 <div class="fourteen wide left floated column" style="padding-left:20px">
                     <h2>Event</h2>
@@ -101,7 +101,7 @@
             </div>
             <div class="ui middle aligned stackable grid">
                 <div class="two wide left floated column">
-                    <i class="handshake huge icon"></i>
+                    <i class="handshake outline huge icon"></i>
                 </div>
                 <div class="fourteen wide left floated column" style="padding-left:20px">
                     <h2>Penjualan</h2>
@@ -110,7 +110,7 @@
             </div>
             <div class="ui middle aligned stackable grid">
                 <div class="two wide left floated column">
-                    <i class="money bill alternate huge icon"></i>
+                    <i class="money bill alternate outline huge icon"></i>
                 </div>
                 <div class="fourteen wide left floated column" style="padding-left:20px">
                     <h2>Keuntungan</h2>
@@ -136,7 +136,7 @@
             </div>
             <div class="ui middle aligned stackable grid">
                 <div class="two wide left floated column">
-                    <i class="calendar alternate huge icon"></i>
+                    <i class="calendar alternate outline huge icon"></i>
                 </div>
                 <div class="fourteen wide left floated column" style="padding-left:20px">
                     <h2>Tanggal</h2>
@@ -170,8 +170,8 @@
         </div>
         <form class="ui fluid action input" style="margin-top:20px;font-size:18px;padding-left:60px;padding-right:60px"
             method="get" action="{{route('lihat-acara-cari')}}">
-            <input type="text" name="keyword" placeholder="Cari desain rumah impian yang ingin anda buat...">
-            <button type="submit" class="ui button teal" style = "background-color:#D1A827">Cari</button>
+            <input type="text" name="keyword" placeholder="Cari event yang anda cari...">
+            <button type="submit" class="ui button grey" style = "background-color:#D1A827">Cari</button>
         </form>
     </div>
 
@@ -183,7 +183,7 @@
             ?>
                 <div class="card" onclick="$('.ui.fullscreen.modal.detail.<?php echo $i ?>').modal('show');">
                     <img class="ui fluid image" src="{{asset($fotos[0])}}" style="object-fit:cover;height:250px">
-                    <div class="ui top right attached teal large label">
+                    <div class="ui top right attached grey large label">
                         <b>
                             <span>{{strftime("%d %b %Y",strtotime($items[$i]->tahun.'-'.$items[$i]->bulan.'-'.$items[$i]->tanggal))}}</span>
                         </b>
@@ -201,11 +201,11 @@
                     </div>
                     <div class="extra content">
                         <div>
-                            <i class="user circle teal icon"></i>
+                            <i class="user circle grey icon"></i>
                             {{ ucfirst($panitias[$i]->nama_panitia)}}
                         </div>
                         <div style="margin-top:5px;display:flex;flex-direction:row;align-items: center">
-                            <div><i class="map marker alternate teal icon"></i></div>
+                            <div><i class="map pin grey icon"></i></div>
                             <div>{{ucfirst($items[$i]->kota)}}</div>
                         </div>
                     </div>
@@ -241,10 +241,10 @@
                             <div class="ui divider"></div>
                             <div class="ui grid">
                                 <div class="one wide middle aligned column">
-                                    <i class="info circle large teal icon"></i>
+                                    <i class="info circle large grey icon"></i>
                                 </div>
                                 <div class="fifteen wide column">
-                                    <div style="font-size:22px;color:teal"><b>Detail Acara</b></div>
+                                    <div style="font-size:22px;color:#D1A827"><b>Detail Acara</b></div>
                                 </div>
                             </div>
                             <div class="ui divider"></div>
@@ -264,7 +264,7 @@
                                         <b>{{ucfirst($items[$i]->nama_acara)}}</b>
                                     </div>
                                     <div style="margin-top:5px;display:flex;flex-direction:row;align-items: center">
-                                        <div><i class="map marker alternate teal icon"></i></div>
+                                        <div><i class="map pin grey icon"></i></div>
                                         <div style="font-size:17px">{{ ucfirst($items[$i]->kota)}}</div>
                                     </div>
                                 </div>
@@ -303,7 +303,7 @@
                             <div class="ui divider"></div>
                             <div class="ui container fluid" style="text-align:right">
                                 <div style="font-size:22px"><b>Harga Tiket</b></div>
-                                <div style="color:teal;font-size:20px">
+                                <div style="color:#D1A827;font-size:20px;">
                                     <b>
                                         <span>Rp </span>
                                         <span>{{number_format(($items[$i]->harga),0,",",".")}}</span>
@@ -311,39 +311,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="sixteen wide column">
-                            <div class="ui divider"></div>
-                            <div class="ui stackable grid">
-                                <div class="one wide column">
-                                    <img class="ui circular image" src="{{asset($panitias[$i]->foto)}}"
-                                        style="width:70px;height:70px;object-fit:cover">
-                                </div>
-                                <div class="thirteen wide column">
-                                    <div style="font-size:18px"><b>Lorem Ipsum Dolor Amet</b></div>
-                                </div>
-                            </div>
-                            <div class="ui stackable grid">
-                                <div class="one wide column">
-                                    <img class="ui circular image" src="{{asset($panitias[$i]->foto)}}"
-                                        style="width:70px;height:70px;object-fit:cover">
-                                </div>
-                                <div class="thirteen wide column">
-                                    <div style="font-size:18px"><b>Lorem Ipsum Dolor Amet</b></div>
-                                </div>
-                            </div>
-                            <form class="ui form" style="margin-top:15px" id="daftar-panitia" method='post' action="/"
-                                enctype="multipart/form-data">
-                                <div class="field">
-                                    <label style="font-size:18px">Isi Komentar</label>
-                                    <input type="text" name="alamat" placeholder="Isi Komentar Anda">
-                                </div>
-                                {{csrf_field()}}
-                                <button class="ui big teal button fluid" onclick="" type="submit" name="submit"
-                                    style="margin-top:40px">Kirim Komentar
-                                </button>
-                            </form>
 
-                        </div>
                     </div>
                 </div>
                 <div class="actions">
@@ -361,7 +329,7 @@
     </div>
     <div class="ui center aligned container" style="margin-top:40px">
         <a href="{{route('lihat-semua-acara')}}">
-            <div class="ui vertical animated large teal button" style="width:150px;background-color:#D1A827">
+            <div class="ui vertical animated large grey button" style="width:150px;background-color:#D1A827">
                 <div class="hidden content">Lihat Semua</div>
                 <div class="visible content">
                     <i class="angle double down icon"></i>

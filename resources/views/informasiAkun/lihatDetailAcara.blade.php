@@ -33,22 +33,14 @@
             </div>
         </div>
     </div>
-    <div class="six wide column">
-        <div class="ui divider"></div>
-        <div style="font-size:22px;color:teal"><b>Barcode Acara</b></div>
-        <div class="ui divider"></div>
-        <img
-            src="data:image/png;base64, {{ base64_encode(QrCode::format('png')->size(300)->generate(encrypt($pesan->kode_pesanan))) }} ">
-            <div style="font-size:22px"><b>Kode Anda: {{ucfirst($pesan->kode_pesanan)}}</b></div>
-    </div>
-    <div class="sixteen wide column">
+    <div class="four wide column">
         <div class="ui divider"></div>
         <div class="ui grid">
             <div class="one wide middle aligned column">
-                <i class="info circle large teal icon"></i>
+                <i class="info circle large grey icon"></i>
             </div>
             <div class="fourteen wide middle aligned column" style="margin-left:5px">
-                <div style="font-size:22px;color:teal"><b>Detail Acara</b></div>
+                <div style="font-size:22px;color:grey"><b>Detail Acara</b></div>
             </div>
         </div>
         <div class="ui divider"></div>
@@ -69,7 +61,7 @@
                     <b>{{strftime("%d %b %Y",strtotime($acara->tahun.'-'.$acara->bulan.'-'.$acara->tanggal))}}</b>
                 </div>
                 <div style="margin-top:10px;display:flex;flex-direction:row;align-items: center">
-                    <div><i class="map marker alternate teal icon"></i></div>
+                    <div><i class="map marker alternate grey icon"></i></div>
                     <div style="font-size:16px">{{ucfirst($acara->kota)}}</div>
                 </div>
             </div>

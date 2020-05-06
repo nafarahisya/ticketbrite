@@ -263,7 +263,7 @@
                 </div>
             </div>
             {{csrf_field()}}
-            <button class="ui big teal button fluid" onclick="" type="submit" name="submit" style="margin-top:40px">
+            <button class="ui big grey button fluid" onclick="" type="submit" name="submit" style="margin-top:40px">
                 Ubah Acara
             </button>
             <div class="ui error message">
@@ -308,10 +308,10 @@
             <div class="ui divider"></div>
             <div class="ui grid">
                 <div class="one wide middle aligned column">
-                    <i class="info circle large teal icon"></i>
+                    <i class="info circle large grey icon"></i>
                 </div>
                 <div class="fifteen wide column">
-                    <div style="font-size:22px;color:teal"><b>Detail Acara</b></div>
+                    <div style="font-size:22px;color:grey"><b>Detail Acara</b></div>
                 </div>
             </div>
             <div class="ui divider"></div>
@@ -332,7 +332,7 @@
                         <b>{{ucfirst($dataAcara->nama_acara)}}</b>
                     </div>
                     <div style="margin-top:5px;display:flex;flex-direction:row;align-items: center">
-                        <div><i class="map marker alternate teal icon"></i></div>
+                        <div><i class="map marker alternate grey icon"></i></div>
                         <div style="font-size:17px">{{ucfirst($dataAcara->kota)}}</div>
                     </div>
                 </div>
@@ -370,7 +370,7 @@
             <div class="ui divider"></div>
             <div class="ui container fluid" style="text-align:right">
                 <div style="font-size:22px"><b>Biaya Acara</b></div>
-                <div style="color:teal;font-size:20px">
+                <div style="color:grey;font-size:20px">
                     <b>
                         <span>Rp </span>
                         <span>{{number_format(($dataAcara->harga),0,",",".")}}</span>

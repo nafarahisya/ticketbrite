@@ -82,7 +82,7 @@
                     </div>
                 </div>
             </div>
-            <button type="button" name="copyToken" value="copy" class="copyToken ui large teal button"
+            <button type="button" name="copyToken" value="copy" class="copyToken ui large grey button"
                 onclick="copyToClipboard('#nominal_donasi')">
                 SALIN NOMINAL
             </button>
@@ -142,7 +142,7 @@
 
 <!-- Tombol Unggah -->
 <div style="max-width:600px;margin: 0 auto">
-    <button class="fluid ui big teal button" style="margin-top:30px;margin-bottom:50px"
+    <button class="fluid ui big grey button" style="margin-top:30px;margin-bottom:50px"
         onclick="$('.ui.tiny.modal.unggah').modal('show');">
         Unggah Bukti Pembayaran
     </button>

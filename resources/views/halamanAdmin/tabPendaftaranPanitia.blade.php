@@ -4,7 +4,7 @@
 </div>
 <div style="margin-top:20px;background-color:#f8f8f8;border:5px solid #687672;border-radius:5px;color:#4d4d4d">
     <div class="ui container fluid" style="padding:30px 20px 30px 20px">
-        <table class="ui striped stackable sortable celled teal table center aligned">
+        <table class="ui striped stackable sortable celled grey table center aligned">
             <thead>
                 <tr>
                     <th>ID Panitia</th>
@@ -30,7 +30,7 @@
                     <td>{{$panitias[$i]->alamat}}</td>
                     <td>{{$users[$i]->username}}</td>
                     <td>
-                        <button class="ui button basic teal"
+                        <button class="ui button basic grey"
                             onclick="$('.ui.large.modal.portofolio.<?php echo $i ?>').modal('show')">
                             Lihat
                         </button>
@@ -64,7 +64,7 @@
                             <div class="ui two stackable cards">
                                 @for($j=0; $j < count($fotos); $j++) <div class="card">
                                     <img src="/{{$fotos[$j]}}" style="height:250px;object-fit:cover">
-                                    <a class="ui teal bottom attached button" href="/{{$fotos[$j]}}"
+                                    <a class="ui grey bottom attached button" href="/{{$fotos[$j]}}"
                                         download="portofolio<?php echo $j+1 ?>">
                                         Download
                                     </a>
