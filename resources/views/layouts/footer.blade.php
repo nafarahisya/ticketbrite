@@ -29,23 +29,23 @@
                 <div class="three wide column">
                     <h4 class="ui header" style="color:white">Tentang Kami</h4>
                     <div class="ui link list">
-                        <a href="#" class="item" style="color:#9c9c9d">Apa itu ticketbrite?</a>
-                        <a href="#" class="item" style="color:#9c9c9d">Syarat dan Ketentuan</a>
-                        <a href="#" class="item" style="color:#9c9c9d">Kebijakan Privasi</a>
-                        <a href="#" class="item" style="color:#9c9c9d">Hubungi Kami</a>
+                        <a href="#" class="item" style="color:#696969">Apa itu ticketbrite?</a>
+                        <a href="#" class="item" style="color:#696969">Syarat dan Ketentuan</a>
+                        <a href="#" class="item" style="color:#696969">Kebijakan Privasi</a>
+                        <a href="#" class="item" style="color:#696969">Hubungi Kami</a>
                     </div>
                 </div>
                 <div class="three wide column">
                     <h4 class="ui header" style="color:white">Mulai Membuat</h4>
                     <div class="ui link list">
-                        <a class="item" href="#" style="color:#9c9c9d">Event</a>
-                        <a class="item" href="#" style="color:#9c9c9d">Ticketing</a>
-                        <a class="item" href="#" style="color:#9c9c9d">Organizer</a>
+                        <a class="item" href="#" style="color:#696969">Event</a>
+                        <a class="item" href="#" style="color:#696969">Ticketing</a>
+                        <a class="item" href="#" style="color:#696969">Organizer</a>
                     </div>
                 </div>
                 <div class="seven wide column">
                     <h4 class="ui header" style="color:white">ticketbrite</h4>
-                    <p style="color:white">ticketbrite merupakan solusi yang tepat bagi anda yang ingin membuat suatu event
+                    <p style="color:#696969">ticketbrite merupakan solusi yang tepat bagi anda yang ingin membuat suatu event
                             impian anda.
                     </p>
                 </div>
