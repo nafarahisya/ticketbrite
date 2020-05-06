@@ -265,7 +265,7 @@
                         </a>
                         <a class="item" href="{{route('tamu.user.panitia.verif.lihat-halaman-scan-barcode')}}"
                             style="margin-left:20px;margin-right:20px">
-                            Deteksi Barcode Acara
+                            Input Kode Acara
                         </a>
                         @else
                         <a class="item" href="{{route('tamu.user.lihat-halaman-daftar-panitia')}}"
@@ -355,7 +355,7 @@
                     </a>
                     <a class="item" href="{{route('tamu.user.panitia.verif.lihat-halaman-scan-barcode')}}"
                         style="margin-left:20px;margin-right:20px">
-                        Deteksi Barcode Acara
+                        Input Kode Acara
                     </a>
                     @else
                     <a class="item" href="{{route('tamu.user.lihat-halaman-daftar-panitia')}}"
@@ -453,7 +453,7 @@
                                 </a>
                                 <a class="item" href="{{route('tamu.user.panitia.verif.lihat-halaman-scan-barcode')}}"
                                     style="margin-left:20px;margin-right:20px">
-                                    Deteksi Barcode Acara
+                                    Input Kode Acara
                                 </a>
                                 @else
                                 <a class="item" href="{{route('tamu.user.lihat-halaman-daftar-panitia')}}"
