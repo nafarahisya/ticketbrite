@@ -90,7 +90,7 @@ class MemberController extends Controller
             Session::put('foto_panitia', $data->foto);
             return redirect()->route('index')->with('alert-success', 'Berhasil mendaftar panitia');
         } else {
-            return redirect()->back()->with('alert', 'Anda wajib memberikan foto Portofolio kepada pihak EventOn!')->withInput();
+            return redirect()->back()->with('alert', 'Anda wajib memberikan foto Portofolio kepada pihak ticketbrite!')->withInput();
         }
     }
 
