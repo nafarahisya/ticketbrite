@@ -4,7 +4,7 @@
 @section('content')
 
 <div class="ui container" style="padding:65px 0px 65px 0px">
-<h2>Acara {{$acara->nama_acara}}</h2>
+    <h2>Acara {{$acara->nama_acara}}</h2>
     <div class="ui divider" style="margin-bottom:20px"></div>
     <div class="ui stackable grid">
         <div class="ten wide column">
@@ -46,8 +46,7 @@
         <div class="ui divider"></div>
         <div class="ui stackable grid">
             <div class="one wide column">
-                <img class="ui circular image" src="{{asset($panitia->foto)}}"
-                    style="width:80px;height:80px;object-fit:cover">
+                <img class="ui circular image" src="{{asset($panitia->foto)}}" style="width:80px;height:80px;object-fit:cover">
             </div>
             <div class="one wide middle aligned column">
                 <div style="font-size:22px"><b>{{ucfirst($panitia->nama_panitia)}}</b></div>
@@ -72,7 +71,7 @@
             </div>
         </div>
         <div class="ui divider"></div>
-    <div style="font-size:20px"><b>Deskripsi</b></div>
+        <div style="font-size:20px"><b>Deskripsi</b></div>
         <div style="font-size:17px;margin-top:10px">
             <span>{{$acara->deskripsi}} </span>
         </div>
@@ -85,9 +84,15 @@
             {{$acara->cp}}
         </div>
         <div style="font-size:20px;margin-top:15px"><b>Kode Acara</b></div>
+        @if($pesan->status !=0)
         <div style="font-size:17px;margin-top:10px;line-height:1.5">
             {{$pesan->kode_pesanan}}
         </div>
+        @else
+        <div style="font-size:17px;margin-top:10px;line-height:1.5">
+            Pembayaran anda masih dalam proses
+        </div>
+        @endif
     </div>
 </div>
 </div>
