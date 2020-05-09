@@ -24,10 +24,8 @@ Route::group(['prefix' => 'tamu', 'as' => 'tamu.'], function () {
     Route::get('logout', 'MemberController@logout')->name('logout');
 
     Route::group(['middleware' => ['user.loggedin'], 'as' => 'user.'], function () {
-        Route::post('update-akun', 'MemberController@updateAkun')->name('update-akun');
         Route::get('lihat-akun', 'MemberController@lihatAkun')->name('lihat-akun');
         Route::get('lihat-detail-acara/{id_acara}', 'MemberController@lihatDetailAcara')->name('lihat-detail-acara');
-        Route::get('lihat-kode-unik', 'MemberController@lihatKodeUnik')->name('lihat-kode-unik');
         Route::get('cari-acara', 'MemberController@cariAcara')->name('cari-acara');
         Route::post('daftar-panitia', 'MemberController@daftarPanitia')->name('daftar-panitia');
         Route::get('lihat-semua-acara', 'MemberController@lihatSemuaAcara')->name('lihat-semua-acara');
@@ -52,8 +50,8 @@ Route::group(['prefix' => 'tamu', 'as' => 'tamu.'], function () {
                 Route::post('hapus-acara/{id_acara}', 'PanitiaController@hapusAcara')->name('hapus-acara');
                 Route::get('lihat-halaman-ubah-acara/{id_acara}', 'PanitiaController@lihatHalamanEditAcara')->name('lihat-halaman-ubah-acara');
                 Route::post('ubah-acara/{id_acara}', 'PanitiaController@editAcara')->name('ubah-acara');
-                Route::get('lihat-halaman-scan-barcode', 'PanitiaController@lihatHalamanDeteksiKode')->name('lihat-halaman-scan-barcode');
-                Route::get('deteksi-barcode-acara','PanitiaController@deteksiKodeAcara')->name('deteksi-barcode-acara');
+                Route::get('lihat-halaman-input-kode-acara', 'PanitiaController@lihatHalamanDeteksiKode')->name('lihat-halaman-scan-barcode');
+                Route::get('deteksi-kode-acara','PanitiaController@deteksiKodeAcara')->name('deteksi-barcode-acara');
                 Route::get('lihat-halaman-pembeli/{id_acara}', 'PanitiaController@lihatDataPembeli')->name('lihat-halaman-pembeli');
 
             });

@@ -198,6 +198,6 @@ class PanitiaController extends Controller
 
     function lihatHalamanDeteksiKode()
     {
-        return view('halamanPanitia.scanQrCode');
+        return view('halamanPanitia.inputKodeAcara');
     }
 }
