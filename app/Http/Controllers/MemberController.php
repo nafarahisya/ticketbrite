@@ -34,16 +34,17 @@ class MemberController extends Controller
         for ($i = 0; $i < count($pesans); $i++) {
             $panitias[$i] = Panitia::where('id', $acaras[$i]->id_panitia)->first();
         }
-        return view('informasiAkun.informasiAkunProfil', compact('akun','pesans','acaras','panitias'));
+        return view('informasiAkun.informasiAkunProfil', compact('akun', 'pesans', 'acaras', 'panitias'));
     }
 
     public function lihatDetailAcara($id_acara)
     {
         $acara = Acara::find($id_acara);
-        $pesan = Pesan::where('id_acara',$acara->id)->first();
+        $pesan = Pesan::where('id_acara', $acara->id)->first();
         if ($acara) {
             $panitia = Panitia::find($acara->id_panitia);
-            return view('informasiAkun.lihatDetailAcara',compact('acara', 'panitia','pesan'));
+            $pesan = Pesan::where('id_member', Session::get('id_member'))->where('id_acara', $acara->id)->first();
+            return view('informasiAkun.lihatDetailAcara', compact('acara', 'panitia', 'pesan'));
         } else {
             abort(404);
         }
@@ -167,5 +168,4 @@ class MemberController extends Controller
         }
         return view('informasiAkun.informasiAkunRiwayat', compact('akun', 'pesans', 'acaras', 'panitias'));
     }
-
 }
