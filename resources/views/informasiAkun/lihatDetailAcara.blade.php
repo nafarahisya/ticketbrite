@@ -84,6 +84,10 @@
         <div style="font-size:17px;margin-top:10px;line-height:1.5">
             {{$acara->cp}}
         </div>
+        <div style="font-size:20px;margin-top:15px"><b>Kode Acara</b></div>
+        <div style="font-size:17px;margin-top:10px;line-height:1.5">
+            {{$pesan->kode_pesanan}}
+        </div>
     </div>
 </div>
 </div>
